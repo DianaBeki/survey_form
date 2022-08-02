@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">FreeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform
+     </p>
+    </div>
+   <!-- =====input===== -->
+<form id="survey-form">
+  <div class="input">
+    <label id="name-label" class="label-input"> Name</label>
+    <input id="name" type="text" placeholder="Name" required></input>
+  <label id="email-label" class="label-input"> Email</label>
+  <input id="email" name="email" type="email" required placeholder="Email"></input>
+  </div>
+  <!-- ====end input=== -->
+  <!-- ====start age==== -->
+ <div class="age">
+<label id="number-label" class="label-input"> Age
+(optional)</label>
+<input id="number" type="number" name="age" placeholder="Age" min="10" max="99" required></input>
+</div> 
+<!-- ===eend age==== -->
+<!-- ====dropdown==== -->
+<div class="dropdown">
+<p>Which option best describes your current role?</p>
+<select id="dropdown">
+  <option>select one role</option>
+  <option value="student">student</option>
+  <option value="other">other</option>
+</select>
+</div>
+<!-- =====end dropdown==== -->
+<!-- ====radio button===== -->
+<div class="radio-btn">
+ <p>Would you recommend freeCodeCamp to a friend?</p>
+ <label>
+ <input name="user-recommend" value="Definitely" type="radio" > Definitely
+</label>
+<label>
+ <input type="radio" name="user-recommend" value="Maybe"> Maybe
+</label>
+<label>
+ <input type="radio" name="user-recommend" value="Not sure"> Not sure
+</label>
+</div>
+ <!-- ====radio button===== -->
+ <!-- ====select -->
+ <div class="select-opt">
+ <p>What is your favorite feature of freeCodeCamp?</p>
+ <select id="select-opt">
+   <option>select an option</option>
+   <option>Challenges</option>
+   <option>Open source</option>
+ </select>
+</div>
+ <!-- ====end select=== -->
+ <!-- checkbox -->
+ <div class="check">
+ <p>What would you like to see improved? (Check all that apply)</p>
+ <label><input value="Front-end Projects" type="checkbox"></input> Front-end Projects</label>
+ <label><input type="checkbox" value="Back-end Projects"> Back-end Projects</input></label>
+ <label><input type="checkbox" value="Data Visualiza"></input> Data Visualization</label>
+ <label><input type="checkbox" value="challenges"></input> Challenges</label>
+ <label><input type="checkbox" value="open source community"></input> Open Source Community</label>
+ <label><input type="checkbox" value="gitter help rooms"></input> Gitter help rooms</label>
+ <label><input type="checkbox" value="videos"></input> Videos</label>
+ <label><input type="checkbox" value="city meetups"></input> City Meetups</label>
+ <label><input type="checkbox" value="wiki"></input> Wiki</label>
+ <label><input type="checkbox" value="forum"></input> Forum</label>
+ <label><input type="checkbox" value="additional courses"> Additional Courses</input></label>
+</div>
+ <!-- ===end checbox=== -->
+<div class="text">
+ <p>Any comments or suggestions?</p>
+ <textarea> Enter your comment here...</textarea>
+</div>
+<div class="btn">
+ <input id="submit" type="submit" value="Submit"></input>
+</div>
+  </form> 
+</body>
+</html>

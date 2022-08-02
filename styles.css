@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body {
+font-family: 'Roboto', sans-serif;
+background-image: linear-gradient(rgba(0,0,255,.3), rgba(0,0,255,.3)), url("https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+display: grid;
+align-content: center;
+justify-content: center;
+margin-bottom: 20px;
+}
+textarea {
+    outline: none;
+    border: 1px solid #1d4ed8;
+    padding: 20px;
+}
+p {
+    margin:5px 0;
+}
+.header {
+    padding-bottom: 40px;
+}
+h1#title {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+p#description {
+    color: #fff;
+    text-align: center;
+}
+form#survey-form {
+    background-color:rgba(255, 255, 255, .8);
+    padding: 50px;
+}
+input#name {
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="email"], input[type="number"] {
+    padding: 10px;
+    outline: none;
+    border:1px solid #1d4ed8;
+}
+.label-input {
+    margin-bottom: 8px;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.age {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20px;
+}
+#dropdown, #select-opt {
+    outline: none;
+    border:1px solid #1d4ed8;
+    padding: 8px;
+}
+.radio-btn {
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+}
+.select-opt {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.check {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.text {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    display: flex;
+    flex-direction: column;    
+}
+#submit {
+    background-color: #1d4ed8;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 900;
+    padding: 15px;
+}
+#submit:hover {
+    background-color: #fff;
+    color: black;
+}
